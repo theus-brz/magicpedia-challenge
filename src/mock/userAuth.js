@@ -1,2 +1,2 @@
 export const mockedUsername = 'zup';
-export const mockedPassword = 'e2b00f30f6c345973ce2d1029d2625776151e1bc246f9792f818778b405a4fdf';
+export const mockedPassword = '2c035a99810f985b996d3fa3cc2f95bb4af5528ef2f56dc579a39ec124f7fe91';
