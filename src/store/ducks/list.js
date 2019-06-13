@@ -1,6 +1,7 @@
 export const Types = {
   GET_REQUEST: 'lists/GET_REQUEST',
   GET_SUCCESS: 'lists/GET_SUCCESS',
+  GET_FAILURE: 'lists/GET_FAILURE',
 };
 
 const INITIAL_STATE = {
@@ -14,6 +15,8 @@ export default function lists(state = INITIAL_STATE, action) {
       return { ...state, loading: true };
     case Types.GET_SUCCESS:
       return { ...state, loading: false, data: action.payload.data };
+    case Types.GET_FAILURE:
+      return { ...state, loading: false };
     default:
       return state;
   }
@@ -26,4 +29,6 @@ export const Creators = {
     type: Types.GET_SUCCESS,
     payload: data,
   }),
+
+  getListFailure: () => ({ type: Types.GET_FAILURE }),
 };

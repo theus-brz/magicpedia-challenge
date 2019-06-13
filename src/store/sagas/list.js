@@ -1,4 +1,4 @@
-import { call, put /*  select */ } from 'redux-saga/effects';
+import { call, put } from 'redux-saga/effects';
 import api from '../../services/api';
 import { Creators as ListActions } from '../ducks/list';
 
@@ -8,7 +8,6 @@ export function* getList() {
 
     yield put(ListActions.getListSuccess({ data: response.data.cards }));
   } catch (err) {
-    console.tron.log('erroo', err);
-    console.log('erroo', err);
+    yield put(ListActions.getListFailure());
   }
 }
