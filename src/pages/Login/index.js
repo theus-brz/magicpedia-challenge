@@ -121,7 +121,7 @@ class Login extends Component {
               {loading ? <i className="fa fa-spinner fa-pulse fa-2x" /> : 'Sign In'}
             </button>
 
-            <a href="null">Lost your password?</a>
+            <p>Lost your password?</p>
           </Actions>
         </div>
       </Container>

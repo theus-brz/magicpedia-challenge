@@ -75,7 +75,7 @@ export const Actions = styled.div`
     }
   }
 
-  a {
+  p {
     color: #666;
     text-decoration: none;
     font-size: 13px;
